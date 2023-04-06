@@ -1,0 +1,28 @@
+<section class="galeria">
+        <h2>Galería de imágenes</h2>
+            <img src="img/peliculas/camaron.jpg" alt="operacion camaron"  ><p>Operación Camarón</p>
+  
+            <img src="img/peliculas/fontanero.jpg" alt="fontanero" ><p>El fontanero, su mujer y otras cosas de ******</p>
+  
+            <img src="img/peliculas/niñosgrandes.jpg" alt="Niños grandes" ><p>Niños Grandes 2</p>
+  
+      </section>
+  
+      <section class="noticias">
+        <h4>Noticias</h4>
+        <ul>
+          <li>
+            <img src="img/noticias/1.jpg" >
+            <a href="#">img/noticias/ 1</a>
+          </li>
+          <li>
+            <img src="img/noticias/2.jpg" >
+            <a href="#">img/noticias/ 2</a>
+          </li>
+          <li>
+            <img src="img/noticias/3.jpg" >
+            <a href="#">img/noticias/ 3</a>
+          </li>
+          
+        </ul>
+      </section>

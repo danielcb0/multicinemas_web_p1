@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(45, 44, 44);
+}
+
+
+.gallery h2{
+    font-size: 100px;
+}
+
+
+.gallery {
+    margin-left: 5%;
+    border: 1%  rgba(204, 204, 204, 0);
+    float: left;
+    width: 25%;
+  }
+
+
+.gallery img:hover{
+    border: 1%  rgba(119, 119, 119, 0);
+    opacity: 0.3;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+  
+/*
+  h6{
+    position: relative; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); /* Black see-through * 
+    color: #f1f1f1; 
+    width: 100%;
+    transition: 1.5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.gallery:hover h6 {
+    opacity: 1;
+  }*/

@@ -2,26 +2,49 @@ body{
     background: #222;
     color: white;
 }
+
+
+h1{
+    color: #ffffff;
+    font-family: Phantomsans, sans-serif;
+}
+
+
 .header{
     background-color: #313131;
     display: flex;
-    
-    
+    justify-content: space-between;
+    align-items: center;
+
 }
 
+
+
+  
 .header img{
     width: 50%;
 }
 
+/**/
 .header h1{
-    text-align: center;
-    font-size:30px; 
-    font-weight:300;
+    font-size:30%; 
+    font-weight:300%;
     color: rgb(12, 9, 70);
     letter-spacing:10px;
     font-family: fantasy;
     font-size: 300%;
+    padding-left: 100%;
 }
+
+.header h1 {
+    font-size: 3em;
+    font-weight: 300;
+    color: rgb(12, 9, 70);
+    letter-spacing: 0.5em;
+    font-family: fantasy;
+    text-align: center;
+    flex-grow: 1;
+  }
 
 .header .login{
     position: relative;
@@ -35,7 +58,8 @@ body{
 /*NAVEGACION*/
 
 .header nav{
-    margin-top: 7%;
+    margin-top: 10%;
+    margin-right: 0%;
 }
 
 .header nav ul{
@@ -52,25 +76,30 @@ body{
   }
   
 .header nav a {
-    position: relative;
-    right: 100%;
+    left: 60%;
     top: 100%;
     display: block;
-    padding: 18px;
+    margin-right: 100px;
     text-decoration: none;
     color: #ffffff;
     font-family: Phantomsans, sans-serif;
+    
 
   }
 
 .header nav a:hover{
-
+    color:#545455; 
+    text-decoration:underline;font-size: 1.25em;
 }
 
 /*Login*/
+.login{
+    display: block;
+
+}
 .header button{
     align-items: center;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    background-image: linear-gradient(144deg,#e2ea42, #277127 50%,#00DDEB);
     border: 0;
     border-radius: 8px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -90,23 +119,16 @@ body{
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
-    transition: all .3s;
+    transition: all .2s;
 }
 
 .header button:active, button:hover{
     outline: 0;
 }
 
--header tton span {
-    background-color: rgb(5, 6, 45);
-    padding: 16px 24px;
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-    transition: 300ms;
-}
 
-.header button:hover span {
+
+.header button:hover  {
     background: none;
 }
 
@@ -130,3 +152,138 @@ input:focus {
     box-shadow: 13px 13px 100px #969696,
                -13px -13px 100px #ffffff;
   }
+
+
+#registro_user{
+    color: #ffffff;
+    font-family: Phantomsans, sans-serif;
+    font-size: 12px;
+}
+
+
+
+/*Contenedor*/
+.contenedor {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr; /* crea una cuadrícula con tres columnas: la primera columna tiene el doble de ancho que las otras dos */
+	grid-gap: 20px; /* agrega espacio entre las celdas de la cuadrícula */
+}
+
+/*Galería imágenes*/
+/*
+.galeria h2{
+    color: #ffffff;
+    font-family: Phantomsans, sans-serif;
+    font-size: 300%;
+    text-align: center;
+    margin-left: 30%;
+}*/
+
+
+.galeria {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	grid-column: 2 / 4;
+	margin-bottom: 300px;
+}
+
+.galeria h2 {
+	grid-column: 1 / -1;
+	margin: 0;
+}
+
+.galeria img {
+    width: 100%;
+    
+	max-width: 100%;
+	height: auto;
+    object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Noticias*/
+.noticias {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.noticia {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.noticia img {
+	height: auto;
+	max-height: 75px;
+	max-width: 125px;
+	object-fit: cover;
+	object-position: center;
+	margin-bottom: 10px;
+}
+
+.noticia h2{
+	margin: 0;
+}
+
+
+
+
+
+/*Estrenos imagenes*/
+/*
+.estrenos  h1{
+    color: #ffffff;
+    font-family: Phantomsans, sans-serif;
+    font-size: 300%;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.cartelera  h1{
+    color: #ffffff;
+    font-family: Phantomsans, sans-serif;
+    font-size: 300%;
+    text-align: center;
+    margin-left: 30%;
+}
+.estrenos h2{
+    color: #ffffff;
+    font-family: Phantomsans, sans-serif;
+    font-size: 100%;
+    margin-left:50%;
+}
+*/
+
+/*Galeria estrenos*/
+/*
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+    float: left;
+}
+.estrenos img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-right: 10px;
+    margin-left:50%;
+}
+*/
+
+
+
