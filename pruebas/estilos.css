@@ -1,50 +1,124 @@
+html{
+  height: 100%;
+}
+
 body{
-    background-color: rgb(45, 44, 44);
+  background: #222;
+  color: white;
+  min-height: 100%;
 }
 
 
-.gallery h2{
-    font-size: 100px;
+
+.grid-container > *{
+  
+  padding: 10px;
+  
+}
+
+.grid-container{
+
+  display: grid;
+  gap: 10;/*Separacion de elementos*/
+  grid-template-areas: 
+  "header header"
+  "navbar navbar"
+  "noticias galeria"
+  "footer footer"
+  ;
+}
+
+/*HEADER*/
+.header{
+  grid-area: header;
+  background-color: #85aedd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+.header img{
+  max-width: 100px;
+}
+
+.login{
+  display: grid;
 }
 
 
-.gallery {
-    margin-left: 5%;
-    border: 1%  rgba(204, 204, 204, 0);
-    float: left;
+/*NAVBAR*/
+.navbar{
+  grid-area: navbar;
+  background-color: slateblue;
+}
+.navbar  ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Para separar los elementos */
+  align-items: center; /* Para centrar verticalmente los elementos */
+}
+
+
+/*NOTICIAS*/
+.noticias{
+  grid-area: noticias;
+  width: 100%;
+  background-color: tomato;
+}
+
+.noticias img{
+  max-width: 150px;
+}
+
+
+
+/*GALERIA*/
+.galeria{
+  grid-area: galeria;
+  background-color: cadetblue;
+}
+.galeria img{
+  width: 300px;
+}
+
+
+
+/*FOOTER*/
+.footer{
+  grid-area: footer;
+  background-color: #8c96a0;
+}
+
+
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  .grid-container{
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;/*alto para cada una de nuestras filas*/
+    grid-template-areas: 
+      "header header"
+      "navbar navbar"
+      "galeria galeria"
+      "noticias noticias"
+      "footer footer"
+      ;
+  }
+
+  
+
+  .galeria{
+    grid-area: galeria;
+  }
+  .galeria img{
     width: 25%;
   }
 
-
-.gallery img:hover{
-    border: 1%  rgba(119, 119, 119, 0);
-    opacity: 0.3;
+  .noticias{
+    display: flex;
   }
-  
-.gallery img {
-    width: 100%;
-    height: auto;
+  .noticias img{
+    width: 50%;
   }
 
-
-
-
   
-/*
-  h6{
-    position: relative; 
-    bottom: 0; 
-    background: rgba(0, 0, 0, 0.5); /* Black see-through * 
-    color: #f1f1f1; 
-    width: 100%;
-    transition: 1.5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 0;
-    text-align: center;
 }
-
-.gallery:hover h6 {
-    opacity: 1;
-  }*/
