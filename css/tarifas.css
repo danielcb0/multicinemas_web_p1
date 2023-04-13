@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  header img {
+    max-width: 80px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  .login {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  h1, h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .login {
+      flex-wrap: wrap;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
+
+/*Cajas "grid"*/
+  .tarifas-grid {
+    width: 60%; /* Ajusta el ancho de la caja al 60% del ancho disponible */
+    margin: 0 auto; /* Centra la caja horizontalmente */
+    padding: 1rem; /* Agrega un poco de espacio interior */
+    background-color: #f2f2f2; /* Establece un color de fondo para la caja */
+    color: black;
+    border-radius: 5px; /* Agrega bordes redondeados a la caja */
+    margin-bottom: 2rem; /* Agrega espacio debajo de la caja */
+  }
+  .tarifas-grid h2{
+    color: rgb(0, 0, 0);
+  }
+  
+  @media (max-width: 768px) {
+    .tarifas-grid {
+      width: 90%; /* Ajusta el ancho de la caja al 90% del ancho disponible en pantallas más pequeñas */
+    }
+  }
+  

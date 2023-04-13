@@ -1,0 +1,112 @@
+html{
+    height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header img {
+  max-width: 80px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.login {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+
+.registro{
+    grid-area: registro;
+    width: 100%;
+      display: grid;
+      place-items: center;
+  
+}
+
+.registro input{
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+form {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  input, label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
