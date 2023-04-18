@@ -1,134 +1,30 @@
-html{
-  height: 100%;
-}
-
-body{
-  background: #222;
-  color: white;
-  min-height: 100%;
-}
-
-
-
-.grid-container > *{
-  
-  padding: 10px;
-  
-}
-
-.grid-container{
-
+.grid-container {
   display: grid;
-  gap: 10;/*Separacion de elementos*/
-  grid-template-areas: 
-  "header header"
-  "navbar navbar"
-  "noticias galeria"
-  "footer footer"
-  ;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  height: 100vh; /* Ajusta la altura del grid al tamaño de la ventana */
 }
 
-/*HEADER*/
-.header{
+.header {
   grid-area: header;
-  background-color: #85aedd;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; 
-}
-.header img{
-  max-width: 100px;
 }
 
-.login{
-  display: grid;
+.sidebar {
+  grid-area: sidebar;
+  max-height: calc(100vh - 100px); /* Ajusta la altura máxima considerando el header y el footer */
+  overflow-y: auto; /* Habilita el scrollbar vertical */
+  background-color: #f0f0f0;
+  padding: 1rem;
 }
 
-
-/*NAVBAR*/
-.navbar{
-  grid-area: navbar;
-  background-color: slateblue;
-}
-.navbar  ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* Para separar los elementos */
-  align-items: center; /* Para centrar verticalmente los elementos */
+.content {
+  grid-area: content;
 }
 
-
-/*NOTICIAS*/
-.noticias{
-  grid-area: noticias;
-  width: 100%;
-  background-color: tomato;
-}
-
-.noticias img{
-  max-width: 150px;
-}
-
-
-
-/*GALERIA*/
-.galeria{
-  grid-area: galeria;
-  background-color: cadetblue;
-}
-.galeria img{
-  width: 300px;
-}
-
-
-
-/*FOOTER*/
-.footer{
+.footer {
   grid-area: footer;
-  background-color: #8c96a0;
 }
-
-
-
-/*RESPONSIVE*/
-@media (max-width: 768px) {
-  .grid-container{
-    grid-template-columns: 200px auto;
-    grid-template-rows: 100px 50px auto 100px;/*alto para cada una de nuestras filas*/
-    grid-template-areas: 
-      "header header"
-      "navbar navbar"
-      "galeria galeria"
-      "noticias noticias"
-      "footer footer"
-      ;
-  }
-
-  
-
-  .galeria{
-    grid-area: galeria;
-  }
-  .galeria img{
-    width: 25%;
-  }
-
-  .noticias{
-    display: flex;
-  }
-  .noticias img{
-    max-width: 50%;
-  }
-
-  
-}
-
-
-
-
-
-
-
-
-
-

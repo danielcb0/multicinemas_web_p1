@@ -4,7 +4,7 @@ html{
   
   body{
     font-family: Arial, sans-serif;
-    background: #222;
+    background: #1C1C1C;
     color: white;
     min-height: 100%;
   }
@@ -15,12 +15,15 @@ html{
     
     padding: 10px;
     
+    
   }
   
   .grid-container{
-  
+    height: 100vh;
     display: grid;
     gap: 10;/*Separacion de elementos*/
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto auto 1fr auto;/*alto para cada una de nuestras filas*/
     grid-template-areas: 
     "header header"
     "navbar navbar"
@@ -36,7 +39,10 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
   }
+
   .header img{
     max-width: 100px;
   }
@@ -44,7 +50,7 @@ html{
    .header h1{
     color: white;
     font-size: 2em;
-    margin: .67em 0
+    margin: 0;
 
   }
 
@@ -57,39 +63,84 @@ html{
   
   /*NAVBAR*/
   .navbar{
-    
     grid-area: navbar;
-    background-color: slateblue;
+    background-color: #333;
   }
   .navbar  ul{
+    list-style: none;/*para quitar los puntitos al inicio*/
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* Para separar los elementos */
     align-items: center; /* Para centrar verticalmente los elementos */
+    padding: 0;
+    margin: 0;
+  }
+  .navbar li a {
+    text-decoration: none;
+    color: #fff;
   }
   
   
   /*NOTICIAS*/
   .noticias{
     grid-area: noticias;
-    width: 100%;
-    background-color: tomato;
+    background-color: #1C1C1C;
+    max-height: calc(200vh - 100px); /* Ajusta la altura máxima considerando el header y el footer */
+    overflow-y: auto; /* Habilita el scrollbar vertical */  
+    padding: 1rem;
+
   }
   
   .noticias img{
-    max-width: 150px;
+    max-width: 100%;
+
   }
+
+  .noticias h2{
+    font-size: 20px;
+    color: slateblue;
+  }
+
+
   
   
   
   /*GALERIA*/
   .galeria{
     grid-area: galeria;
-    background-color: cadetblue;
+    /*background-color: cadetblue;*/
   }
   .galeria img{
     width: 300px;
   }
+/**/
+  .flex-pelicula{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around ;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.pelicula{
+    /*border: 3px solid rgb(39, 38, 38);*/
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    width: 300px;
+    
+    text-align: center;
+    margin: 5px;
+}
+
+.pelicula img{
+  width: 100%;
+}
+  
   
   
   
@@ -97,6 +148,9 @@ html{
   .footer{
     grid-area: footer;
     background-color: #8c96a0;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
   }
   
   
@@ -105,7 +159,7 @@ html{
   @media (max-width: 768px) {
     .grid-container{
       grid-template-columns: 200px auto;
-      grid-template-rows: 100px 50px auto 100px;/*alto para cada una de nuestras filas*/
+      grid-template-rows: 150px 75px auto 200px 300px;/*alto para cada una de nuestras filas*/
       grid-template-areas: 
         "header header"
         "navbar navbar"
@@ -116,29 +170,25 @@ html{
     }
   
     
-  
-    .galeria{
-      grid-area: galeria;
+    .header ul{
+      padding: 0;
+      margin: 0;
     }
-    .galeria img{
-      width: 25%;
-    }
-  
+    
     .noticias{
       display: flex;
+      height:  auto;
     }
     .noticias img{
-      max-width: 50%;
+      max-width: 100%;
     }
-  
+    
+    .pelicula img{
+      max-width: 100%;
+    }
     
   }
 
-
-/***/
-
-
-  
   
   
   

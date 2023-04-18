@@ -1,0 +1,28 @@
+.noticias{
+  border: 1px solid rgb(39, 38, 38);
+  background: #ccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-center;
+
+  margin: 0 auto;
+}
+.noticia{
+  border: 1px solid rgb(39, 38, 38);
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  margin: 5px;
+}
+
+.imagen img{
+  max-width: 25%;
+  height: 100%;
+}
