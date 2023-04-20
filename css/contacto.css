@@ -1,39 +1,28 @@
-
-
-
-
-
-.registro{
+.contacto{
     grid-area: registro;
     width: 100%;
       display: grid;
       place-items: center;
-  
 }
 
-.registro input{
-    display: block;
-    margin-bottom: 10px;
 
-}
-
-form {
+.contacto form {
     width: 90%;
     max-width: 500px;
   }
 
-  input, label {
+.contacto  input, label {
     display: block;
     margin-bottom: 10px;
   }
 
-  input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+.contacto  input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
     width: 100%;
     padding: 8px;
     font-size: 16px;
   }
 
-  input[type="submit"] {
+.contacto  input[type="submit"] {
     width: 100%;
     padding: 10px;
     font-size: 18px;
@@ -43,6 +32,6 @@ form {
     cursor: pointer;
   }
 
-  input[type="submit"]:hover {
+.contacto input[type="submit"]:hover {
     background-color: #0056b3;
   }
