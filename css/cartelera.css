@@ -1,7 +1,6 @@
 
 .flex-imagenes{
     border: 1px solid rgb(39, 38, 38);
-    background: #ccc;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -18,3 +17,10 @@ h2{
     justify-content: center;
     color: teal;
 }
+
+.pelicula:hover {
+    /* Agrandar un poco el elemento al pasar el ratón por encima */
+    transform: scale(1.1);
+    /* Añadir sombra más pronunciada al pasar el ratón por encima */
+    box-shadow: 0 20px 40px rgba(0, 183, 255, 0.6);
+  }

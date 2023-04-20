@@ -86,7 +86,9 @@ html{
     grid-area: noticias;
     background-color: #1C1C1C;
     max-height: calc(200vh - 100px); /* Ajusta la altura máxima considerando el header y el footer */
-    overflow-y: auto; /* Habilita el scrollbar vertical */  
+    overflow-y: auto ; /* Habilita el scrollbar vertical */
+
+    scrollbar-color: white;
     padding: 1rem;
 
   }
@@ -98,7 +100,7 @@ html{
 
   .noticias h2{
     font-size: 20px;
-    color: slateblue;
+    color: rgb(255, 255, 255);
   }
 
 
@@ -110,9 +112,14 @@ html{
     grid-area: galeria;
     /*background-color: cadetblue;*/
   }
-  .galeria img{
-    width: 300px;
-  }
+   .galeria h2{
+    color: teal;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px rgb(4, 226, 238);
+   }
+
 /**/
   .flex-pelicula{
     padding: 20px;
@@ -127,18 +134,32 @@ html{
 
 .pelicula{
     /*border: 3px solid rgb(39, 38, 38);*/
-    background-color: white;
-    color: black;
+    background-color: rgb(60, 60, 60);
     font-family: Arial, sans-serif;
     font-weight: bold;
     width: 300px;
     
     text-align: center;
     margin: 5px;
+
+    /* Añadir transición para un efecto suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Añadir sombra para un efecto moderno */
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+}
+.pelicula a{
+  color: white;
 }
 
 .pelicula img{
-  width: 100%;
+  max-width: 100%;
+}
+
+.pelicula:hover {
+  /* Agrandar un poco el elemento al pasar el ratón por encima */
+  transform: scale(1.1);
+  /* Añadir sombra más pronunciada al pasar el ratón por encima */
+  box-shadow: 0 20px 40px rgba(0, 183, 255, 0.6);
 }
   
   

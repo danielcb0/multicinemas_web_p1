@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "/css/style.css" />
+    <link rel = "stylesheet" type = "text/css" href = "../css/pelicula.css" />
+    <title>Django Desencadenados</title>
+</head>
+<body>
+
+    <header class="header">
+    
+        <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+    
+        <a href="../index.html"><h1>CINEMAWEB</h1></a>
+        
+    
+        <form class="login">
+
+          </form>
+    
+      </header>
+    
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../estrenos.html">Estrenos</a></li>
+          <li><a href="../cartelera.html">Cartelera</a></li>
+          <li><a href="../horario.html">Horarios</a></li>
+          <li><a href="../tarifas.html">Tarifas</a></li>
+          <li><a href="../informacion.html">Información</a></li>
+        </ul>
+      </nav>
+
+
+
+    <!--Imagenes-->
+    <section class="imagenes">
+        <img src="../img/peliculas/django/1.jpg" alt=" 1">
+        <img src="../img/peliculas/django//2.jpg" alt=" 2">
+        <img src="../img/peliculas/django//3.jpg" alt=" 3">
+        <img src="../img/peliculas/django//4.jpg" alt=" 4">
+    </section>
+    
+    <section class="datos-peli">
+        <h2>Información de la película</h2>
+        <ul>
+            <li><strong>Director:</strong> Quentin Tarantino</li>
+            <li><strong>Intérpretes:</strong> Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, Samuel L. Jackson</li>
+            <li><strong>Sinopsis:</strong> Un esclavo liberado llamado Django se une a un cazarrecompensas en la búsqueda de su esposa, quien ha sido secuestrada por un sádico terrateniente.</li>
+            <li><strong>Temáticas:</strong> Western, Acción, Drama, Venganza, Esclavitud</li>
+            <li><strong>Valoración media:</strong> ⭐⭐⭐⭐✰ (4.2/5 basado en IMDb 8.4/10)</li>
+          </ul>
+          
+          
+         
+
+    </section>
+
+    <section class="comentarios">
+        <section class="comentario">
+            <p><strong>Usuario 1:</strong> Comentario del usuario 1</p>
+            <p><em>Valoración:</em> ⭐⭐⭐⭐</p>
+          </section>
+          <section class="comentario">
+            <p><strong>Usuario 2:</strong> Comentario del usuario 2</p>
+            <p><em>Valoración:</em> ⭐⭐⭐</p>
+          </section>
+    </section>
+
+
+    <section class="agregar-comentario">
+        <h2>Agregar comentario y valoración</h2>
+        <form>
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+            
+            <label for="valoracion">Valoración:</label>
+            <select id="valoracion" name="valoracion">
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+</body>
+</html>
