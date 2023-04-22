@@ -35,3 +35,13 @@
 .contacto input[type="submit"]:hover {
     background-color: #0056b3;
   }
+
+.datos-contacto{
+  display: flex;
+  justify-content: center;
+  margin-top:50px;
+}
+
+.datos-contacto p {
+  color: white;
+}
